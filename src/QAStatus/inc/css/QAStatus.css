@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    width:100%;
+    height: 50%;
+
+}
+.container > div {
+    flex: 1; /*grow*/
+    border: 2px solid;
+    border-left:none;
+    border-bottom: none;
+    display: flex;
+}
+.container > div.Line1-div {
+
+    min-height: 50%;
+    background-color:pink;
+    border-left: 2px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: baseLine;
+}
+.container > div.Line2-div {
+
+    min-height: 50%;
+    background-color:gainsboro;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: baseLine;
+
+}
+.container > div.Line7-div {
+
+    min-height: 50%;
+    background-color:plum;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: baseLine;
+}
+.container > div.Line6and8-div {
+
+    min-height: 50%;
+    background-color:greenyellow;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: baseLine;
+
+}
+.container > div.Line9-div {
+
+    min-height: 50%;
+    background-color:lightseagreen;
+    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: baseLine;
+
+}
+.container > div.Line10-div {
+
+    min-height: 50%;
+    background-color:lightblue;
+    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: baseLine;
+}
+.container > div.Line1-div .MasterRex, .container > div.Line2-div .MasterRex,
+.container > div.Line7-div .MasterRex, .container > div.Line6and8-div .MasterRex,
+.container > div.Line9-div .MasterRex, .container > div.Line10-div .MasterRex{
+    width: 31%;
+    min-height: 12%;
+    border: 2px solid;
+    margin: 1% 0% 0% 1%;
+    background-color:orange;
+
+}
+.MasterRex table {
+    font-size: small;
+}
+.separate {
+    margin: 1% 0% 0% 1%;
+    width:100%;
+}
+.lineTitle{
+    width:100%;
+}
+.divtoBlink{
+    -webkit-animation: bgblink 3s;  /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;  /* Chrome, Safari, Opera */
+}
+@-webkit-keyframes bgblink {
+    from {background-color: #orange;}
+    50% {color:#fffda5;}
+    to {background-color: #orange;}
+}
+@keyframes bgblink {
+    from {background-color: #orange;}
+    50% {background-color:#fffda5;}
+    to {background-color: #orange;}
+}
