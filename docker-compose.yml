@@ -1,5 +1,5 @@
 web:
-  container_name: php7_apache_oci8
+  container_name: php7.2.24_apache_oci8-QAStatus
   build: .
   ports:
     - "80:80"
